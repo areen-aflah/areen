@@ -1,1227 +1,1066 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="author" content="Designsninja">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<title>Areen Aflah</title>
-<link rel="shortcut icon" href="assets/images/favicon.ico">
-
-<!-- Core Style Sheets -->
-<link rel="stylesheet" href="assets/css/master.css">
-<!-- Responsive Style Sheets -->
-<link rel="stylesheet" href="assets/css/responsive.css">
-<!-- Revolution Style Sheets -->
-<link rel="stylesheet" type="text/css" href="revolution/css/settings.css">
-<link rel="stylesheet" type="text/css" href="revolution/css/layers.css">
-<link rel="stylesheet" type="text/csss" href="revolution/css/navigation.css">
-
-<link rel='stylesheet' href='revolution/css/revolution.addon.bubblemorph.css' type='text/css' media='all' />
-
-<!-- CUSTOM CSS -->
-<style type="text/css">body{margin: 0}.bm-gradient{background:-webkit-linear-gradient(left,#ff2a75 0%,#ffdb4f 100%);-webkit-background-clip:text;-webkit-text-fill-color:transparent}.bm-gradient2{background:-webkit-linear-gradient(left,#452aff 0%,#45ffff 100%);-webkit-background-clip:text;-webkit-text-fill-color:transparent}.bm-gradient3{background:-webkit-linear-gradient(left,#4f00f6 0%,#b000f7 100%);-webkit-background-clip:text;-webkit-text-fill-color:transparent}</style>
-<style type="text/css">.hermes.tp-bullets{}.hermes .tp-bullet{overflow:hidden;  border-radius:50%;  width:16px;  height:16px;  background-color:rgba(0,0,0,0);  box-shadow:inset 0 0 0 2px rgb(204,204,204);  -webkit-transition:background 0.3s ease;  transition:background 0.3s ease;  position:absolute}.hermes .tp-bullet:hover{background-color:rgba(204,204,204,1)}.hermes .tp-bullet:after{content:' '; position:absolute; bottom:0; height:0; left:0; width:100%; background-color:rgb(204,204,204); box-shadow:0 0 1px rgb(204,204,204); -webkit-transition:height 0.3s ease; transition:height 0.3s ease}.hermes .tp-bullet.selected:after{height:100%}</style>
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="shortcut icon" href="../assets/img/logos/fav.png" type="image/x-icon">
+    <!-- ========================================= Css files -->
+    <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../assets/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="../assets/css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="../assets/css/slick.css">
+    <link rel="stylesheet" href="../assets/css/slick-theme.css">
+    <link rel="stylesheet" href="../assets/css/aos.css">
+    <link rel="stylesheet" href="../assets/css/all.min.css">
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <title>olikit - Main Home Page</title>
+</head>
 <style>
-	.about-section:before {
+    .text-gradient__indigo-red {
+    background-image: linear-gradient(207deg,#ef4848 23%,#6366f1 87%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 700;
+    }
+    .header1{
+    font-size: 2rem;
+    color: #0D1A2F;
+    max-width: 60rem;
+    margin-bottom: 20px;
+    }
+@media screen and (max-width: 768px){
+.header.has-style1 .header1 {
+    text-align: center;
+    font-size: 25px;
+    margin-bottom: 20px;
+}}
+
+.header2{
+    font-size: 1.5rem;
+    color: #0D1A2F;
+    max-width: 60rem;
+    }
+@media screen and (max-width: 768px){
+.header.has-style1 .header2 {
+    text-align: center;
+    font-size: 20px;
+}}
+.header.has-style1 .header-title {
+    font-size: 3.5rem;
+    color: #0D1A2F;
+    max-width: 60rem;
+    margin-bottom: 40px;
+}
+.section.section-testimonial-x .client-wrap img {
+    max-width: 100%;
+    position: relative;
+    z-index: 1;
+    margin-left: -12.299999999999997rem;
+}
+.section.section-testimonial-x .client-wrap1 img {
+    max-width: 80%;
+    position: relative;
+    z-index: 1;
+    margin-left: 6.700000000000003rem;
+    margin-top: -642px;
+}
+.your-favorite-food {
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+.gap {
+    padding: 100px 0px;
+}
+
+html:not(.no-js) [data-aos^="fade"][data-aos^="fade"].aos-animate {
+    opacity: 1;
+    transform: none;
+}
+[data-aos][data-aos][data-aos-delay="200"].aos-animate, body[data-aos-delay="200"] [data-aos].aos-animate {
+    transition-delay: .2s;
+}
+html:not(.no-js) [data-aos^="fade"][data-aos^="fade"] {
+    opacity: 0;
+    transition-property: opacity, transform, -webkit-transform;
+}
+[data-aos][data-aos][data-aos-duration="300"], body[data-aos-duration="300"] [data-aos] {
+    transition-duration: .3s;
+}
+[data-aos][data-aos][data-aos-delay="200"], body[data-aos-delay="200"] [data-aos] {
+    transition-delay: 0s;
+}
+.food-photo-section {
+    position: relative;
+}
+
+.food-photo-section a.one {
+    top: 7%;
+    right: 5%;
+}
+.food-photo-section a {
+    background-color: white;
     position: absolute;
-    content: '';
+    padding: 20px;
+    border-radius: 10px;
+}
+a {
+    color: black;
+}
+
+@media (max-width: 1400px){
+.food-content-section {
+    padding-left: 30px;
+}
+}
+@media (max-width: 1400px){
+.food-content-section h2 {
+    font-weight: bold;
+    width: 88%;
+    font-size: 42px;
+    line-height: 52px;
+}
+}
+.food-photo-section a.two {
+    top: 20%;
+    right: 5%;
+}
+
+.food-photo-section a.three {
+    top: 33%;
+    right: 5%;
+}
+p {
+    color: #1c1c1c;
+}
+
+.remove-padding {
+    padding: 0!important;
+}
+.row {
+    margin-left: -15px;
+    margin-right: -15px;
+}
+.cbp {
+    position: relative;
+    margin: 0 auto;
+    z-index: 1;
+    height: 400px;
+}
+.cbp-wrapper-outer, .cbp-wrapper, .cbp-wrapper-helper {
+    list-style-type: none;
+    padding: 0;
     width: 100%;
     height: 100%;
-    bottom: 0px;
-    background: #EE4725!important;
-    background: -moz-linear-gradient(left, #EE4725 0%, rgba(231,1,104,1) 100%)!important;
-    background: -webkit-gradient(left top, right top, color-stop(0%, rgb(206, 109, 18)), color-stop(100%, rgba(231,1,104,1)))!important;
-    background: -webkit-linear-gradient(left, #EE4725 0%, rgba(231,1,104,1) 100%)!important;
-    background: -o-linear-gradient(left, #EE4725 0%, rgba(231,1,104,1) 100%)!important;
-    background: -ms-linear-gradient(left, #EE4725 0%, rgba(231,1,104,1) 100%)!important;
-    background: linear-gradient(to right, #EE4725 0%, rgba(231,1,104,1) 100%)!important;
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#580e66', endColorstr='#e70168', GradientType=1 )!important;
+    z-index: 1;
 }
-.about-section .about-text {
-    margin-top: 10em;
+.cbp-wrapper-outer {
+    overflow: hidden;
+    position: relative;
+    margin: 0 auto;
 }
-.testimonial-style-6 .testimonial-item .testimonial-content img {
-    width: 357px;
-    margin-left: auto;
-    margin-right: auto;
+.cbp-ready > * {
+    visibility: visible;
 }
+.cbp-wrapper, .cbp-wrapper-helper {
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 0;
+}
+.cbp-wrapper-outer, .cbp-wrapper, .cbp-wrapper-helper {
+    list-style-type: none;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+.cbp .cbp-item {
+    position: absolute;
+    top: 0;
+    left: 0;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+.transition-none *, .home-slider *, .mfp-container *, .attr-nav *, .cbp-wrapper *, .parallax, .rev-slider *, #loader-overlay *, .menu-overlay, .tr-products *, #loader-overlay, .main-box-title *, .skillbar-wrap * {
+    transition-timing-function: none;
+    -moz-transition-timing-function: none;
+    -webkit-transition-timing-function: none;
+    -o-transition-timing-function: none;
+    -ms-transition-timing-function: none;
+    transition-duration: 0s;
+    -moz-transition-duration: 0s;
+    -webkit-transition-duration: 0s;
+    -o-transition-duration: 0s;
+    -ms-transition-duration: 0s;
+}
+.cbp-item-wrapper {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    top: 0;
+    left: 0;
+}
+[class^='imghvr-'], [class*=' imghvr-'] {
+    position: relative;
+    display: inline-block;
+    margin: 0;
+    max-width: 100%;
+    background-color: rgba(191, 7, 49, 0.5);
+    color: #fff;
+    overflow: hidden;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-transform: translateZ(0);
+    -moz-transform: translateZ(0);
+    -ms-transform: translateZ(0);
+    -o-transform: translateZ(0);
+    transform: translateZ(0);
+}
+
+[class^='imghvr-'] > img, [class*=' imghvr-'] > img {
+    vertical-align: middle;
+    max-width: 100%;
+}
+
+.cbp img {
+    display: block;
+    width: 100%;
+    height: auto;
+    border: 0;
+}
+[class^='imghvr-fade'] figcaption, [class*=' imghvr-fade'] figcaption {
+    opacity: 0;
+}
+
+[class^='imghvr-'] figcaption, [class*=' imghvr-'] figcaption {
+    padding: 30px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    color: #ffffff;
+}
+.center-layout {
+    display: table;
+    table-layout: fixed;
+    height: 100%;
+    width: 100%;
+    position: relative;
+}
+.v-align-middle {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.cbp .cbp-item {
+    position: absolute;
+    top: 0;
+    left: 0;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+[class^='imghvr-'], [class*=' imghvr-'] {
+    position: relative;
+    display: inline-block;
+    margin: 0;
+    max-width: 100%;
+    background-color: rgba(191, 7, 49, 0.5);
+    color: #fff;
+    overflow: hidden;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-transform: translateZ(0);
+    -moz-transform: translateZ(0);
+    -ms-transform: translateZ(0);
+    -o-transform: translateZ(0);
+    transform: translateZ(0);
+}
+[class^='imghvr-'] figcaption, [class*=' imghvr-'] figcaption {
+    padding: 30px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    color: #ffffff;
+}
+.center-layout {
+    display: table;
+    table-layout: fixed;
+    height: 100%;
+    width: 100%;
+    position: relative;
+}
+.v-align-middle {
+    display: table-cell;
+    vertical-align: middle;
+}
+.cbp .cbp-item {
+    position: absolute;
+    top: 0;
+    left: 0;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
 </style>
-</head>
+
 <body>
+    
+    <!-- =========================== header-->
+    <header class="header has-style1">
+        <img class="section-particle" src="../assets/images/others/particle.svg" alt="">
 
-<!--== Loader Start ==-->
-<div id="loader-overlay">
-  <div class="loader">
-      <div class="loader-inner"></div>
-  </div>
-</div>
-<!--== Loader End ==-->
-
-<!--== Wrapper Start ==-->
-<div class="wrapper">
-
-  <!--== Header Start ==-->
-  <nav class="navbar navbar-default navbar-fixed dark bootsnav on no-full menu-center navbar-transparent">
-    <!--== Start Top Search ==-->
-    <div class="fullscreen-search-overlay" id="search-overlay"> <a href="#" class="fullscreen-close" id="fullscreen-close-button"><i class="icofont icofont-close"></i></a>
-      <div id="fullscreen-search-wrapper">
-        <form method="get" id="fullscreen-searchform">
-          <input type="text" value="" placeholder="Type and hit Enter..." id="fullscreen-search-input" class="search-bar-top">
-          <i class="fullscreen-search-icon icofont icofont-search">
-          <input value="" type="submit">
-          </i>
-        </form>
-      </div>
-    </div>
-    <!--== End Top Search ==-->
-  	<div class="container-fluid">
-      <!--== Start Atribute Navigation ==-->
-      <div class="attr-nav hidden-xs sm-display-none">
-        <ul>
-          <li class="side-menu"><a href="#"><i class="icofont icofont-navigation-menu"></i></a></li>
-          <li class="search"><a href="#" id="search-button"><i class="icofont icofont-search"></i></a></li>
-        </ul>
-      </div>
-      <!--== End Atribute Navigation ==-->
-
-      <!--== Start Header Navigation ==-->
-      <div class="navbar-header">
-        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-menu"> <i class="tr-icon ion-android-menu"></i> </button>
-        <div class="logo"> <a href="index.html"> <img class="logo logo-display" src="assets/images/logo-black.png" alt=""> <img class="logo logo-scrolled" src="assets/images/logo-white.png" alt=""> </a> </div>
-      </div>
-      <!--== End Header Navigation ==-->
-
-      <!--== Collect the nav links, forms, and other content for toggling ==-->
-      <div class="collapse navbar-collapse" id="navbar-menu">
-        <ul class="nav navbar-nav navbar-center" data-in="fadeIn" data-out="fadeOut">
-          <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Concepts</a>
-             <ul class="dropdown-menu">
-               <li><a href="creative-agency.html">Creative Agency</a></li>
-               <li><a href="digital-agency.html">Digital Agency</a></li>
-               <li><a href="minimal-agency.html">Minimal Agency</a></li>
-               <li><a href="design-studio.html">Design Studio</a></li>
-               <li><a href="landing.html">Landing</a></li>
-               <li><a href="freelancer.html">Freelancer</a></li>
-               <li><a href="business.html">Business</a></li>
-               <li><a href="startups.html">Startups</a></li>
-               <li><a href="fashion.html">Fashion</a></li>
-               <li><a href="classic.html">Classic</a></li>
-               <li><a href="architect.html">Architect</a></li>
-               <li><a href="onepage.html">One Page</a></li>             </ul>
-           </li>
-           <li><a class="page-scroll" href="#feature">Features</a></li>
-           <li><a class="page-scroll" href="#about">About</a></li>
-           <li><a class="page-scroll" href="#work">Works</a></li>
-           <li><a class="page-scroll" href="#team">Team</a></li>
-           <li><a class="page-scroll" href="#pricing">Pricings</a></li>
-           <li><a class="page-scroll" href="#blog">Blogs</a></li>
-           <li><a class="page-scroll" href="#contact">Contacts</a></li>
-        </ul>
-      </div>
-      <!--== /.navbar-collapse ==-->
-    </div>
-
-    <!-- Start Side Menu -->
-    <div class="side dark-bg">
-  		  <a href="index.html" class="logo-side"><img src="assets/images/logo-sidemenu.png" alt="side-logo"/></a>
-        <a href="#" class="close-side"><i class="icofont icofont-close"></i></a>
-        <div class="widget mt-120">
-          <ul class="link">
-            <li class="link-item"><a class="page-scroll" href="#feature">Features</a></li>
-            <li class="link-item"><a class="page-scroll" href="#about">About</a></li>
-            <li class="link-item"><a class="page-scroll" href="#work">Works</a></li>
-            <li class="link-item"><a class="page-scroll" href="#team">Team</a></li>
-            <li class="link-item"><a class="page-scroll" href="#pricing">Pricings</a></li>
-            <li class="link-item"><a class="page-scroll" href="#blog">Blogs</a></li>
-            <li class="link-item"><a class="page-scroll" href="#contact">Contacts</a></li>
-          </ul>
-        </div>
-        <ul class="social-media">
-          <li><a href="#" class="icofont icofont-social-facebook"></a></li>
-          <li><a href="#" class="icofont icofont-social-twitter"></a></li>
-          <li><a href="#" class="icofont icofont-social-behance"></a></li>
-          <li><a href="#" class="icofont icofont-social-dribble"></a></li>
-          <li><a href="#" class="icofont icofont-social-linkedin"></a></li>
-        </ul>
-     </div>
-     <!-- End Side Menu -->
-
-  </nav>
-  <!--== Header End ==-->
-
-  <!--== Hero Slider Start ==-->
-  <section class="remove-padding transition-none">
-	<div id="rev_slider_1078_1_wrapper" class="rev_slider_wrapper fullwidthbanner-container" data-alias="classic4export" data-source="gallery" style="margin:0px auto;background-color:#000000;padding:0px;margin-top:0px;margin-bottom:0px;">
-  <!-- START REVOLUTION SLIDER 5.4.1 fullwidth mode -->
-	  <div id="rev_slider_1078_1" class="rev_slider fullwidthabanner" style="display:none;" data-version="5.4.1">
-  <ul>	<!-- SLIDE  -->
-	  <li data-index="rs-3045" data-transition="boxfade" data-slotamount="default" data-hideafterloop="0" data-hideslideonmobile="off"  data-easein="Power4.easeInOut" data-easeout="Power4.easeInOut" data-masterspeed="2000"  data-thumb="assets/images/slides/home-bg-1-100x50.jpg"  data-rotate="0"  data-fstransition="slidingoverlayvertical" data-fsmasterspeed="1500" data-fsslotamount="7" data-saveperformance="off"  data-param1="" data-param2="" data-param3="" data-param4="" data-param5="" data-param6="" data-param7="" data-param8="" data-param9="" data-param10="" data-description="">
-		  <!-- MAIN IMAGE -->
-		
-		  <img src="assets/images/areen/bg2.jpg"  alt=""  data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat" data-bgparallax="10" class="rev-slidebg" data-no-retina>
-		  <!-- LAYERS -->
-  
-		  <!-- LAYER NR. 1 -->
-		  <div class="">
-  
-		<div class="tp-caption    bm-gradient3 tp-caption NotGeneric-Title   tp-resizeme rs-parallaxlevel-3"
-				 id="slide-3045-layer-1"
-				 data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']"
-				 data-y="['middle','middle','middle','middle']" data-voffset="['-150','-150','-150','-150']"
-				data-fontsize="['30','30','30','30']"
-				data-lineheight="['30','30','20','20']"
-				data-width="none"
-				data-height="none"
-				data-whitespace="nowrap"
-  
-				data-type="text"
-				data-responsive_offset="on"
-  
-				data-frames='[{"delay":0,"speed":1500,"frame":"0","from":"y:bottom;rX:-20deg;rY:-20deg;rZ:0deg;","to":"o:1;","ease":"Power3.easeOut"},{"delay":"wait","speed":300,"frame":"999","to":"auto:auto;","ease":"Power3.easeInOut"}]'
-				data-textAlign="['left','left','left','left']"
-				data-paddingtop="[10,10,10,10]"
-				data-paddingright="[0,0,0,0]"
-				data-paddingbottom="[5,5,5,5]"
-				data-paddingleft="[0,0,0,0]"
-  
-				style="z-index: 12; white-space: normal; font-size: 30px; line-height: 35px; font-weight: 700; color: #000000; letter-spacing: 0px; display: inline-block;font-family: 'Poppins', sans-serif;">There's Always Time For a Tea.</div>
+        <!-- =========================== navbar-->
+        <nav class="navbar">
+            <div class="container">
+                <div class="flex">
+                    <a href="../index.html " class="navbar-brand flex vcenter" href="#"><img data-aos="fade-right"
+                            class="logo" src="assets/images/logos/logo.png" width="200%"></a>
+                    <ul class="navbar-menu">
+                        <li data-aos="fade-left" data-aos-delay="100"> <a class="fade-page"
+                                href="../index.html">Home</a>
+                        </li>
+                        <li data-aos="fade-left" data-aos-delay="400"> <a class="fade-page"
+                            href="#">About Us</a> </li>
+                            <li data-aos="fade-left" data-aos-delay="400"> <a class="fade-page"
+                                href="#">Our Stories</a> </li>
+                                <li data-aos="fade-left" data-aos-delay="400"> <a class="fade-page"
+                                    href="#">Contact Us</a> </li>
+                        <!-- <li class="menu-item-has-children">
+                            <a>Demos</a>
+                            <ul class="sub-menu">
+                                <li><a class="fade-page" href="Home_1.html">Home 1</a>
+                                </li>
+                                <li><a class="fade-page" href="Home_2.html">Home 2</a>
+                                </li>
+                                <li><a class="fade-page" href="Home_3.html">Home 3</a>
+                                </li>
+                                <li><a class="fade-page" href="Home_4.html">Home 4</a>
+                                </li>
 
 
-		
+                            </ul>
+                        </li> -->
+                        <!-- <li class="menu-item-has-children">
+                            <a>Pages</a>
+                            <ul class="sub-menu">
+                                <li><a class="fade-page" href="page_about.html">About</a>
+                                </li>
+                                <li><a class="fade-page" href="page_plans.html">Plans</a>
+                                </li>
+                                <li><a class="fade-page" href="page_blog.html">Blog</a>
+                                </li>
 
-  
-  
-		  <div class="tp-caption NotGeneric-Title   tp-resizeme rs-parallaxlevel-3"
-			   id="slide-3045-layer-2"
-			   data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']"
-			   data-y="['middle','middle','middle','middle']" data-voffset="['-50','-50','-50','-50']"
-			  data-fontsize="['40','40','60','65']"
-			  data-lineheight="['120','120','70','50']"
-			  data-width="none"
-			  data-height="none"
-			  data-whitespace="nowrap"
-  
-			  data-type="text"
-			  data-responsive_offset="on"
-  
-			  data-frames='[{"delay":0,"speed":1500,"frame":"0","from":"y:bottom;rX:-20deg;rY:-20deg;rZ:0deg;","to":"o:1;","ease":"Power3.easeOut"},{"delay":"wait","speed":300,"frame":"999","to":"auto:auto;","ease":"Power3.easeInOut"}]'
-			  data-textAlign="['left','left','left','left']"
-			  data-paddingtop="[5,5,5,5]"
-			  data-paddingright="[0,0,0,0]"
-			  data-paddingbottom="[5,5,5,5]"
-			  data-paddingleft="[0,0,0,0]"
-  
-			  style="z-index: 5; white-space: nowrap;font-family: 'Montserrat', sans-serif;font-weight:100; font-size: 10px;">Welcome to</div>
-  
-		<!-- LAYER NR. 2 -->
-			<div class="gradient-color tp-caption NotGeneric-Title   tp-resizeme rs-parallaxlevel-2"
-				 id="slide-3045-layer-3"
-				 data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']"
-				 data-y="['middle','middle','middle','middle']" data-voffset="['50','50','50','50']"
-				data-fontsize="['120','120','70','45']"
-				data-lineheight="['120','120','70','50']"
-				data-width="none"
-				data-height="none"
-				data-whitespace="nowrap"
-  
-				data-type="text"
-				data-responsive_offset="on"
-  
-				data-frames='[{"delay":0,"speed":1500,"frame":"0","from":"y:bottom;rX:-20deg;rY:-20deg;rZ:0deg;","to":"o:1;","ease":"Power3.easeOut"},{"delay":"wait","speed":300,"frame":"999","to":"auto:auto;","ease":"Power3.easeInOut"}]'
-				data-textAlign="['left','left','left','left']"
-				data-paddingtop="[10,10,10,10]"
-				data-paddingright="[0,0,0,0]"
-				data-paddingbottom="[10,10,10,10]"
-				data-paddingleft="[0,0,0,0]"
-  
-				style="z-index: 5; white-space: nowrap;font-family: 'Montserrat', sans-serif;font-weight:700;">Aflah <font color="white">Trading</font></div>
-  
-  
-  
-		  <!-- LAYER NR. 3 -->
-		  <div class="tp-caption NotGeneric-Icon   tp-resizeme rs-parallaxlevel-1"
-			   id="slide-3045-layer-4"
-			   data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']"
-			   data-y="['middle','middle','middle','middle']" data-voffset="['150','150','150','150']"
-						  data-width="none"
-			  data-height="none"
-			  data-whitespace="nowrap"
-  
-			  data-type="text"
-			  data-responsive_offset="on"
-  
-			  data-frames='[{"delay":0,"speed":2500,"frame":"0","from":"y:bottom;rX:-20deg;rY:-20deg;rZ:0deg;","to":"o:1;","ease":"Power3.easeOut"},{"delay":"wait","speed":500,"frame":"999","to":"auto:auto;","ease":"Power3.easeInOut"}]'
-			  data-textAlign="['left','left','left','left']"
-			  data-paddingtop="[0,0,0,0]"
-			  data-paddingright="[0,0,0,0]"
-			  data-paddingbottom="[0,0,0,0]"
-			  data-paddingleft="[0,0,0,0]"
-  
-			  style="z-index: 7; white-space: nowrap;cursor:default;"><a class="btn btn-light-outline btn-lg btn-square" tabindex="0">Purchase Now</a> </div>
-  
-			  </div>
-	  </li>
-	  <!-- SLIDE  -->
-	  <li data-index="rs-3046" data-transition="incube" data-slotamount="default" data-hideafterloop="0" data-hideslideonmobile="off"  data-easein="Power4.easeInOut" data-easeout="Power4.easeInOut" data-masterspeed="2000"  data-thumb="assets/images/slides/home-bg-2-100x50.jpg"  data-rotate="0"  data-fstransition="slidedown" data-fsmasterspeed="1500" data-fsslotamount="7" data-saveperformance="off" data-param1="" data-param2="" data-param3="" data-param4="" data-param5="" data-param6="" data-param7="" data-param8="" data-param9="" data-param10="" data-description="">
-		  <!-- MAIN IMAGE -->
-		  <img src="assets/videos/girl-video.jpg"  alt=""  data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat" data-bgparallax="10" class="rev-slidebg" data-no-retina>
-		  <!-- LAYERS -->
-  
-	  <!-- BACKGROUND VIDEO LAYER -->
-	  <div class="rs-background-video-layer"
-		  data-forcerewind="on"
-		  data-volume="mute"
-		  data-videowidth="100%"
-		  data-videoheight="100%"
-		  data-videomp4="assets/videos/girl-video.mp4"
-		  data-videopreload="auto"
-		  data-videoloop="loop"
-		  data-aspectratio="16:9"
-		  data-autoplay="true"
-		  data-autoplayonlyfirsttime="false">
-	  </div>
-  
-		  <!-- LAYER NR. 1 -->
-		  <div class="hero-text-wrap">
-		<div class="tp-caption NotGeneric-Title   tp-resizeme rs-parallaxlevel-4"
-		   id="slide-3045-layer-5"
-		   data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']"
-		   data-y="['middle','middle','middle','middle']" data-voffset="['-150','-150','-150','-150']"
-		  data-fontsize="['30','120','70','45']"
-		  data-lineheight="['30','120','70','50']"
-		  data-width="none"
-		  data-height="none"
-		  data-whitespace="nowrap"
-  
-		  data-type="text"
-		  data-responsive_offset="on"
-  
-		  data-frames='[{"delay":0,"speed":1500,"frame":"0","from":"y:bottom;rX:-20deg;rY:-20deg;rZ:0deg;","to":"o:1;","ease":"Power3.easeOut"},{"delay":"wait","speed":300,"frame":"999","to":"auto:auto;","ease":"Power3.easeInOut"}]'
-		  data-textAlign="['left','left','left','left']"
-		  data-paddingtop="[10,10,10,10]"
-		  data-paddingright="[0,0,0,0]"
-		  data-paddingbottom="[10,10,10,10]"
-		  data-paddingleft="[0,0,0,0]"
-  
-		  style="z-index: 5; white-space: nowrap;text-transform:uppercase;font-family: 'Montserrat', sans-serif;letter-spacing:5px;font-weight:400;">Welcome To</div>
-  
-  
-	  <div class="tp-caption NotGeneric-Title   tp-resizeme rs-parallaxlevel-3"
-		 id="slide-3045-layer-6"
-		 data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']"
-		 data-y="['middle','middle','middle','middle']" data-voffset="['-50','-50','-50','-50']"
-		data-fontsize="['120','120','70','45']"
-		data-lineheight="['120','120','70','50']"
-		data-width="none"
-		data-height="none"
-		data-whitespace="nowrap"
-  
-		data-type="text"
-		data-responsive_offset="on"
-  
-		data-frames='[{"delay":0,"speed":1500,"frame":"0","from":"y:bottom;rX:-20deg;rY:-20deg;rZ:0deg;","to":"o:1;","ease":"Power3.easeOut"},{"delay":"wait","speed":300,"frame":"999","to":"auto:auto;","ease":"Power3.easeInOut"}]'
-		data-textAlign="['left','left','left','left']"
-		data-paddingtop="[10,10,10,10]"
-		data-paddingright="[0,0,0,0]"
-		data-paddingbottom="[10,10,10,10]"
-		data-paddingleft="[0,0,0,0]"
-  
-		style="z-index: 5; white-space: nowrap;font-family: 'Montserrat', sans-serif;font-weight:700;">Ascot </div>
-  
-		<!-- LAYER NR. 2 -->
-		<div class="tp-caption NotGeneric-Title   tp-resizeme rs-parallaxlevel-2"
-		   id="slide-3045-layer-7"
-		   data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']"
-		   data-y="['middle','middle','middle','middle']" data-voffset="['50','50','50','50']"
-		  data-fontsize="['120','120','70','45']"
-		  data-lineheight="['120','120','70','50']"
-		  data-width="none"
-		  data-height="none"
-		  data-whitespace="nowrap"
-  
-		  data-type="text"
-		  data-responsive_offset="on"
-  
-		  data-frames='[{"delay":0,"speed":1500,"frame":"0","from":"y:bottom;rX:-20deg;rY:-20deg;rZ:0deg;","to":"o:1;","ease":"Power3.easeOut"},{"delay":"wait","speed":300,"frame":"999","to":"auto:auto;","ease":"Power3.easeInOut"}]'
-		  data-textAlign="['left','left','left','left']"
-		  data-paddingtop="[10,10,10,10]"
-		  data-paddingright="[0,0,0,0]"
-		  data-paddingbottom="[10,10,10,10]"
-		  data-paddingleft="[0,0,0,0]"
-  
-		  style="z-index: 5; white-space: nowrap;font-family: 'Montserrat', sans-serif;font-weight:700;">Classic Agency</div>
-  
-  
-  
-	  <!-- LAYER NR. 3 -->
-	  <div class="tp-caption NotGeneric-Icon   tp-resizeme rs-parallaxlevel-1"
-		 id="slide-3045-layer-8"
-		 data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']"
-		 data-y="['middle','middle','middle','middle']" data-voffset="['150','150','150','150']"
-			  data-width="none"
-		data-height="none"
-		data-whitespace="nowrap"
-  
-		data-type="text"
-		data-responsive_offset="on"
-  
-		data-frames='[{"delay":0,"speed":2500,"frame":"0","from":"y:bottom;rX:-20deg;rY:-20deg;rZ:0deg;","to":"o:1;","ease":"Power3.easeOut"},{"delay":"wait","speed":500,"frame":"999","to":"auto:auto;","ease":"Power3.easeInOut"}]'
-		data-textAlign="['left','left','left','left']"
-		data-paddingtop="[0,0,0,0]"
-		data-paddingright="[0,0,0,0]"
-		data-paddingbottom="[0,0,0,0]"
-		data-paddingleft="[0,0,0,0]"
-  
-		style="z-index: 7; white-space: nowrap;cursor:default;"><a class="btn btn-light-outline btn-lg btn-square" tabindex="0">Purchase Now</a> </div>
-		  </div>
-	  </li>
-	  <!-- SLIDE  -->
-  
-  
-  </ul>
-  </div>
-  </div>
-	</section>
-  <!--== Hero Slider End ==-->
+                                <li><a class="fade-page" href="page_Article.html"> Article</a>
+                                </li>
 
-  <!--== Who We Are Start ==-->
-  <!-- <section class="dark-night-bg pb-60" id="feature">
-    <div class="container">
-      <div class="row">
-        <div class="col-sm-8 section-heading">
-       		  <h5 class="default-color mt-0 text-uppercase">Who We Are </h5>
-            <h2 class="mt-0 white-color font-700">We Design and Build a Digital Agency Website for <span class="gradient-color">Your Products.</span></h2>
-        </div>
-      </div>
-      <div class="row mt-50">
-        <div class="col-md-4 feature-box text-center mb-50 col-sm-6 animation-move-top col-xs-12">
-          <i class="icofont icofont-ui-settings font-40px gradient-color"></i>
-          <h4 class="mt-0 font-600 white-color">User Experience</h4>
-          <p class="font-400">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-        </div>
-        <div class="col-md-4 feature-box text-center mb-50 col-sm-6 animation-move-top col-xs-12">
-          <i class="icofont icofont-samsung-galaxy font-40px gradient-color"></i>
-          <h4 class="mt-0 font-600 white-color">Responsive Layout</h4>
-          <p class="font-400">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-        </div>
-        <div class="col-md-4 feature-box text-center mb-50 col-sm-6 animation-move-top col-xs-12">
-          <i class="icofont icofont-surface-tablet font-40px gradient-color"></i>
-          <h4 class="mt-0 font-600 white-color">Digital Solutions</h4>
-          <p class="font-400">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-        </div>
-      </div>
-    </div>
-  </section> -->
-  <!--== Who We Are End ==-->
+                                <li><a class="fade-page" href="page_contact.html"> Contact</a>
+                                </li>
 
-  <!--== About Start ==-->
-  <section class="dark-night-bg pt-0 pb-0 about-section" id="about">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-5">
-       		  <div class="model-img">
-              <img class="img-responsive" src="assets/images/model.jpg" alt="model" />
+                                <li><a class="fade-page" href="page_help.html"> Help Center </a>
+                                </li>
+                            </ul>
+                        </li> -->
+                       
+                    </ul>
+                </div>
+                <div class="level-right">
+                    <!-- your list menu here -->
+                    <div class="navbar-menu  ">
+
+                        <a href="" data-aos="fade-left" data-aos-delay="400"
+                            class="text-white btn btn-primary mr-1 btn-round ">Our Products
+                        </a>
+                    </div>
+                    <div class="mobile-menu">
+                        <!-- your list menu in mobile here -->
+                        <ul>
+                            <li><a class="fade-page" href="Home_1.html">Home 1</a>
+                            </li>
+                            <li><a class="fade-page" href="Home_2.html">Home 2</a>
+                            </li>
+                            <li><a class="fade-page" href="Home_3.html">Home 3</a>
+                            </li>
+                            <li><a class="fade-page" href="Home_4.html">Home 4</a>
+                            </li>
+
+
+                        </ul>
+                    </div>
+                    <div class="flex">
+                        <div class="menu-toggle-icon">
+                            <div class="menu-toggle">
+                                <div class="menu">
+                                    <input type="checkbox">
+                                    <div class="line-menu"></div>
+                                    <div class="line-menu"></div>
+                                    <div class="line-menu"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <div class="container">
+            <div class="header-wrap">
+                <div class="row align-items-center">
+                    <div class="col-lg-6">
+                        <h2 class="header1 text-gradient__indigo-red"  data-aos="fade-up" data-aos-delay="500"><b>There's Always Time For a Tea.</b></h2>
+                        <h2 class="header2"  data-aos="fade-up" data-aos-delay="500">Welcome To</h2>
+                        <h2 class="header-title" data-aos="fade-up" data-aos-delay="500" style="font-weight: 700;">Aflah Trading
+                           </h2>
+                        <p class="header-desc" data-aos="fade-up" data-aos-delay="600">Behind the word
+                            Leading Distributions of Creamers, Tea Products, Concentrates, Marinades and More.
+                        </p>
+                        <div class="d-flex justify-content-center  justify-content-lg-start ">
+                            <a href="#" class="btn btn-primary btn-round" data-aos="fade-up" data-aos-delay="700">Let's
+                                Get
+                                Started<ion-icon name="arrow-forward"></ion-icon></a>
+
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="header-img">
+                            <img data-aos="fade-left" data-aos-delay="700" src="assets/images/img/img1.png"
+                                alt="">
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
-        <div class="col-md-7">
-			
-          <div class="about-text">
-			<h2 class="font-700" style="font-family: 'Poppins', sans-serif;">About Us</h2>
+    </header>
 
-            <blockquote>
-				AFLAH TRADING is a leading DISTRIBUTOR of creamers to HORECA channel in UAE. The company was established in 2016 As a UAE representation of Tea ingredients and Retail Food Brands, Over the years, spreading its services in FMCG distribution all across UAE and other parts of GCC in near future.<br><br>
- 
-				We also distribute a wide range of products which has made a huge difference in the market, based on the opinions of the retailers. We manufacture and market our products in the brand name of “ AREEN ”.
-				
-            </blockquote>
-          </div>
-        </div>
-      </div>
-
-    </div>
-  </section>
-  <!--== About End ==-->
-
-  <!--== Portfolio Start ==-->
-  <section class="white-bg dark-block pt-0 pb-0" id="work">
-  	<div class="container-fluid remove-padding">
-		<br><br><br>
-		<div class="row">
-			<div class="col-sm-8 section-heading">
-					 <h5 style="font-family: Poppins;" class="default-color mt-0 text-uppercase">WHAT WE SERVE AND DELIVER</h5>
-				<h2 style="font-family: Poppins;" class="mt-0 font-700">Our <span class="gradient-color" style="font-family: Poppins;">Products</span></h2>
-			</div>
-		  </div>
-		  <br><br>
-
-    	<div class="row">
-            <div class="col-md-12">
-
-            <div id="mosaic-gallery" class="cbp">
-              <div class="cbp-item branding advertising col-md-6 col-sm-6">
-                  <figure class="imghvr-fade text-center portfolio-type-2">
-                        <img src="assets/images/areen/p1.png" alt="97">
-                        <figcaption class="gradient-bg">
-                          <div class="center-layout">
-                            <div class="v-align-middle">
-                              <a class="magnific-lightbox" href="assets/images/areen/p1.png">
-                                <i class="icofont icofont-search"></i>
-                              </a>
-                            </div>
-                        </div>
-                      </figcaption>
-                  </figure>
-              </div>
-
-                <div class="cbp-item print web-design col-md-3 col-sm-6 col-xs-12">
-                  <figure class="imghvr-fade text-center portfolio-type-2">
-                        <img src="assets/images/areen/p2.png" alt="98">
-                        <figcaption class="gradient-bg">
-                          <div class="center-layout">
-                            <div class="v-align-middle">
-                              <a class="magnific-lightbox" href="assets/images/areen/p2.png">
-                                <i class="icofont icofont-search"></i>
-                              </a>
-                            </div>
-                        </div>
-                      </figcaption>
-                  </figure>
+     <!-- =========================== section testimonial -->
+     <!-- <section class="section section-testimonial-x">
+        <div class="container">
+            <div class="row justify-content-xl-center align-items-center">
+                <div class="col-lg-5 col-md-5 order-md-1 order-2  mt-5 mt-lg-0">
+                    <div class="client-wrap">
+                        <img src="../assets/images/bg/testimonial.png" alt="testimonial">
+                    </div>
+                    <div class="client-wrap1">
+                        <img src="../assets/images/bg/testimonial.png" alt="testimonial">
+                    </div>
                 </div>
-
-                <div class="cbp-item print advertising col-md-3 col-sm-6 col-xs-12">
-                  <figure class="imghvr-fade text-center portfolio-type-2">
-                        <img src="assets/images/areen/p3.png" alt="99">
-                        <figcaption class="gradient-bg">
-                          <div class="center-layout">
-                            <div class="v-align-middle">
-                              <a class="magnific-lightbox" href="assets/images/areen/p3.png">
-                                <i class="icofont icofont-search"></i>
-                              </a>
-                            </div>
-                        </div>
-                      </figcaption>
-                  </figure>
+                <div class="col-lg-7 col-md-7 order-md-2 order-1 ">
+                    <div class="section-head flex between vcenter">
+                        <h2 class="section-title">What Clients Say<span class="text-primary">.</span></h2>
+                    </div>
+                    <p class="client"> <span class="text-primary">Aron Smith</span>, UX Designer</p>
+                    <p class="client-quote mb-1">
+                        We are motivated by the satisfaction of our clients. Put your trust in us and share in our
+                        growth Asset Management is made up of a team of expert, committed and experienced people
+                        with a passion for financial markets. Our goal is to achieve continuous and sustainable
+                        growth of our clients.
+                    </p>
+                    <img src="../assets/img/others/sign.svg" alt="">
                 </div>
-
-                <div class="cbp-item branding photography col-md-6 col-sm-6 col-xs-12">
-                  <figure class="imghvr-fade text-center portfolio-type-2">
-                        <img src="assets/images/areen/p4.png" alt="100">
-                        <figcaption class="gradient-bg">
-                          <div class="center-layout">
-                            <div class="v-align-middle">
-                              <a class="magnific-lightbox" href="assets/images/areen/p4.png">
-                                <i class="icofont icofont-search"></i>
-                              </a>
-                            </div>
-                        </div>
-                      </figcaption>
-                  </figure>
-                </div>
-
-                <div class="cbp-item branding web-design col-md-3 col-sm-6 col-xs-12">
-                  <figure class="imghvr-fade text-center portfolio-type-2">
-                        <img src="assets/images/areen/p1.png" alt="101">
-                        <figcaption class="gradient-bg">
-                          <div class="center-layout">
-                            <div class="v-align-middle">
-                              <a class="magnific-lightbox" href="assets/images/areen/p1.png">
-                                <i class="icofont icofont-search"></i>
-                              </a>
-                            </div>
-                        </div>
-                      </figcaption>
-                  </figure>
-                </div>
-
-                <div class="cbp-item branding web-design col-md-3 col-sm-6 col-xs-12">
-                  <figure class="imghvr-fade text-center portfolio-type-2">
-                        <img src="assets/images/areen/p3.png" alt="102">
-                        <figcaption class="gradient-bg">
-                          <div class="center-layout">
-                            <div class="v-align-middle">
-                              <a class="magnific-lightbox" href="assets/images/areen/p3.png">
-                                <i class="icofont icofont-search"></i>
-                              </a>
-                            </div>
-                        </div>
-                      </figcaption>
-                  </figure>
-                </div>
-    		      </div>
             </div>
         </div>
-    </div>
-  </section>
-  <!--== Portfolio End ==-->
+    </section> -->
 
-  <!--== Testimonails Start ==-->
-  <section style="background-image: url(assets/images/areen/bg1.jpg);" id="testimonial">
-    <div class="container">
-      <div class="row">
-        <div class="col-sm-8 section-heading">
-       		  <h5 class="white-color mt-0 text-uppercase">What Our Customers Says</h5>
-            <h2 class="mt-0 font-700 white-color">Our <span class="gradient-color play-font font-italic">Client</span> Testimonails</h2>
-        </div>
-      </div>
-      <div class="row">
-        <div class="testimonial-style-6">
-          <div class="col-xs-12">
-            <!--== Slide ==-->
-            <div class="testimonial-item text-center">
-              <div class="testimonial-content white-color">
-                <img class="img-responsive text-center" src="assets/images/areen/p1.png" alt="avatar-1"/>
-            
-                <h5 style="font-family: Poppins;" class="font-700 mb-0 white-color">Dovid Levine</h5>
-              </div>
-            </div>
-          </div>
 
-          <div class="col-xs-12">
-            <!--== Slide ==-->
-			<div class="testimonial-item text-center">
-				<div class="testimonial-content white-color">
-				  <img class="img-responsive text-center" src="assets/images/areen/p2.png" alt="avatar-1"/>
-			  
-				  <h5 style="font-family: Poppins;" class="font-700 mb-0 white-color">Dovid Levine</h5>
-				</div>
-			  </div>
-			</div>
-			<div class="col-xs-12">
-				<!--== Slide ==-->
-				<div class="testimonial-item text-center">
-					<div class="testimonial-content white-color">
-					  <img class="img-responsive text-center" src="assets/images/areen/p4.png" alt="avatar-1"/>
-				  
-					  <h5 style="font-family: Poppins;" class="font-700 mb-0 white-color">Dovid Levine</h5>
+    <section class="your-favorite-food gap" style="background-image: url(assets/images/img/background-1.png);">
+		<div class="container">
+			<div class="row align-items-center">
+				<div class="col-lg-5 aos-init aos-animate" data-aos="fade-up" data-aos-delay="200" data-aos-duration="300">
+					<div class="food-photo-section"  data-aos="fade-right" data-aos-delay="500">
+						<img alt="img" style="margin-left: -123px;" src="assets/images/img/set1.png" width="150%">
+					
 					</div>
-				  </div>
+				</div><br>
+				<div class="col-lg-6 offset-lg-1 aos-init aos-animate mt-3" data-aos="fade-up" data-aos-delay="500">
+					<div class="food-content-section"  data-aos="fade-up" data-aos-delay="500">
+                        <h4 class="text-primary mb-2" >About Us</h4>
+                        <h2 class="header1 text-gradient__indigo-red"  data-aos="fade-up" data-aos-delay="500"><b>Aflah Trading</b></h2>
+					
+								<p><b>AFLAH TRADING is a leading DISTRIBUTOR of creamers to HORECA channel in UAE. The company was established in 2016 As a UAE representation of Tea ingredients and Retail Food Brands, Over the years, spreading its services in FMCG distribution all across UAE and other parts of GCC in near future.<br><br>
+                                    We also distribute a wide range of products which has made a huge difference in the market, based on the opinions of the retailers. We manufacture and market our products in the brand name of “ AREEN ”.
+                                </b></p>
+								<a href="#" class="button button-2">Order Now</a>
+					</div>
 				</div>
-          <div class="col-md-4 col-sm-6 col-xs-12">
-            <!--== Slide ==-->
-            <div class="testimonial-item text-center">
-				<div class="testimonial-content white-color">
-				  <img class="img-responsive text-center" src="assets/images/areen/p3.png" alt="avatar-1"/>
-			  
-				  <h5 style="font-family: Poppins;" class="font-700 mb-0 white-color">Dovid Levine</h5>
-				</div>
-			  </div>
 			</div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  <!--== Testimonails End ==-->
+		</div>
+	</section>
 
 
+    <section class="white-bg dark-block pt-0 pb-0" id="work">
+        <div class="container-fluid remove-padding">
+          <div class="row">
+              <div class="col-md-12">
+  
+              <div id="mosaic-gallery" class="cbp cbp-caption-active cbp-caption-pushTop cbp-ready" style="height: 1017px;"><div class="cbp-wrapper-outer"><div class="cbp-wrapper">
 
+                <div class="cbp-item branding advertising col-md-6 col-sm-6" style="left: 0px; top: 0px;"><div class="cbp-item-wrapper">
+                    <figure class="imghvr-fade text-center portfolio-type-2">
+                          <img src="assets/images/img/1.jpg" alt="97">
+                          <figcaption class="gradient-bg">
+                            <div class="center-layout">
+                              <div class="v-align-middle">
+                                <a class="magnific-lightbox" href="assets/images/img/1.jpg">
+                                  <i class="icofont icofont-search"></i>
+                                </a>
+                              </div>
+                          </div>
+                        </figcaption>
+                    </figure>
+                </div></div>
+  
+                  <div class="cbp-item print web-design col-md-3 col-sm-6 col-xs-12" style="left: 674px; top: 0px;"><div class="cbp-item-wrapper">
+                    <figure class="imghvr-fade text-center portfolio-type-2">
+                          <img src="assets/images/img/2.jpg" alt="98">
+                          <figcaption class="gradient-bg">
+                            <div class="center-layout">
+                              <div class="v-align-middle">
+                                <a class="magnific-lightbox" href="assets/images/img/2.jpg">
+                                  <i class="icofont icofont-search"></i>
+                                </a>
+                              </div>
+                          </div>
+                        </figcaption>
+                    </figure>
+                  </div></div>
+  
+                  <div class="cbp-item print advertising col-md-3 col-sm-6 col-xs-12" style="left: 1011px; top: 0px;"><div class="cbp-item-wrapper">
+                    <figure class="imghvr-fade text-center portfolio-type-2">
+                          <img src="assets/images/img/3.jpg" alt="99">
+                          <figcaption class="gradient-bg">
+                            <div class="center-layout">
+                              <div class="v-align-middle">
+                                <a class="magnific-lightbox" href="assets/images/img/3.jpg">
+                                  <i class="icofont icofont-search"></i>
+                                </a>
+                              </div>
+                          </div>
+                        </figcaption>
+                    </figure>
+                  </div></div>
 
-  <!--== Our Team Start ==-->
-  <section class="white-bg pb-0" id="team">
-    <div class="container-fluid">
-      <div class="row">
-        <div class="col-sm-8 section-heading">
-       		  <h5 class="default-color mt-0 text-uppercase">Strategic Digital Solutions</h5>
-            <h2 class="mt-0 font-700">Our <span class="gradient-color">Creative</span> Team</h2>
-        </div>
-      </div>
-      <div class="row mt-50">
-        <figure class="imghvr-blur text-center col-md-2 col-sm-2 col-xs-12 remove-padding">
-          <img src="assets/images/team/team-01.jpg" alt="your-image">
-          <figcaption class="white-bg">
-            <div class="center-layout">
-				  	<div class="v-align-middle">
-				  		<h4 class="mb-0 mt-10 dark-color">Charles Flores</h4>
-				  		<h5 class="gradient-color mt-0 mb-0">Lead Designer</h5>
-              <ul class="social-default-no-border mt-20 mb-20">
-        			  <li><a href="#" class="facebook"><i class="icofont icofont-social-facebook"></i></a></li>
-        			  <li><a href="#" class="twitter"><i class="icofont icofont-social-twitter"></i></a></li>
-        			  <li><a href="#" class="behance"><i class="icofont icofont-social-behance"></i></a></li>
-        			  <li><a href="#" class="dribble"><i class="icofont icofont-social-dribble"></i></a></li>
-        		  </ul>
-				  	</div>
-				  </div>
-          </figcaption>
-        </figure>
-        <!--== Member End ==-->
+                  
+  <!-------Itmes------->
 
-        <figure class="imghvr-blur text-center col-md-2 col-sm-2 col-xs-12 remove-padding">
-          <img src="assets/images/team/team-02.jpg" alt="your-image">
-          <figcaption class="white-bg">
-            <div class="center-layout">
-				  	<div class="v-align-middle">
-				  		<h4 class="mb-0 mt-10 dark-color">Megan Castro</h4>
-				  		<h5 class="gradient-color mt-0 mb-0">Fashion Model</h5>
-              <ul class="social-default-no-border mt-20 mb-20">
-        			  <li><a href="#" class="facebook"><i class="icofont icofont-social-facebook"></i></a></li>
-        			  <li><a href="#" class="twitter"><i class="icofont icofont-social-twitter"></i></a></li>
-        			  <li><a href="#" class="behance"><i class="icofont icofont-social-behance"></i></a></li>
-        			  <li><a href="#" class="dribble"><i class="icofont icofont-social-dribble"></i></a></li>
-        		  </ul>
-				  	</div>
-				  </div>
-          </figcaption>
-        </figure>
-        <!--== Member End ==-->
+                  <div class="cbp-item branding web-design col-md-3 col-sm-6 col-xs-12" style="left: 337px; top: 673px;"><div class="cbp-item-wrapper">
+                    <figure class="imghvr-fade text-center portfolio-type-2">
+                          <img src="assets/images/img/6.jpg" alt="102">
+                          <figcaption class="gradient-bg">
+                            <div class="center-layout">
+                              <div class="v-align-middle">
+                                <a class="magnific-lightbox" href="assets/images/img/6.jpg">
+                                  <i class="icofont icofont-search"></i>
+                                </a>
+                              </div>
+                          </div>
+                        </figcaption>
+                    </figure>
+                  </div></div>
 
-        <figure class="imghvr-blur text-center col-md-2 col-sm-2 col-xs-12 remove-padding">
-          <img src="assets/images/team/team-03.jpg" alt="your-image">
-          <figcaption class="white-bg">
-            <div class="center-layout">
-				  	<div class="v-align-middle">
-				  		<h4 class="mb-0 mt-10 dark-color">John Walters</h4>
-				  		<h5 class="gradient-color mt-0 mb-0">CEO & Founder</h5>
-              <ul class="social-default-no-border mt-20 mb-20">
-        			  <li><a href="#" class="facebook"><i class="icofont icofont-social-facebook"></i></a></li>
-        			  <li><a href="#" class="twitter"><i class="icofont icofont-social-twitter"></i></a></li>
-        			  <li><a href="#" class="behance"><i class="icofont icofont-social-behance"></i></a></li>
-        			  <li><a href="#" class="dribble"><i class="icofont icofont-social-dribble"></i></a></li>
-        		  </ul>
-				  	</div>
-				  </div>
-          </figcaption>
-        </figure>
-        <!--== Member End ==-->
+                  
+    <!-------SHO------->
 
-        <figure class="imghvr-blur text-center col-md-2 col-sm-2 col-xs-12 remove-padding">
-          <img src="assets/images/team/team-04.jpg" alt="your-image">
-          <figcaption class="white-bg">
-            <div class="center-layout">
-				  	<div class="v-align-middle">
-				  		<h4 class="mb-0 mt-10 dark-color">Sharon Miller</h4>
-				  		<h5 class="gradient-color mt-0 mb-0">Researcher</h5>
-              <ul class="social-default-no-border mt-20 mb-20">
-        			  <li><a href="#" class="facebook"><i class="icofont icofont-social-facebook"></i></a></li>
-        			  <li><a href="#" class="twitter"><i class="icofont icofont-social-twitter"></i></a></li>
-        			  <li><a href="#" class="behance"><i class="icofont icofont-social-behance"></i></a></li>
-        			  <li><a href="#" class="dribble"><i class="icofont icofont-social-dribble"></i></a></li>
-        		  </ul>
-				  	</div>
-				  </div>
-          </figcaption>
-        </figure>
-        <!--== Member End ==-->
-
-        <figure class="imghvr-blur text-center col-md-2 col-sm-2 col-xs-12 remove-padding">
-          <img src="assets/images/team/team-05.jpg" alt="your-image">
-          <figcaption class="white-bg">
-            <div class="center-layout">
-				  	<div class="v-align-middle">
-				  		<h4 class="mb-0 mt-10 dark-color">Jacob Silva</h4>
-				  		<h5 class="gradient-color mt-0 mb-0">Photograher</h5>
-              <ul class="social-default-no-border mt-20 mb-20">
-        			  <li><a href="#" class="facebook"><i class="icofont icofont-social-facebook"></i></a></li>
-        			  <li><a href="#" class="twitter"><i class="icofont icofont-social-twitter"></i></a></li>
-        			  <li><a href="#" class="behance"><i class="icofont icofont-social-behance"></i></a></li>
-        			  <li><a href="#" class="dribble"><i class="icofont icofont-social-dribble"></i></a></li>
-        		  </ul>
-				  	</div>
-				  </div>
-          </figcaption>
-        </figure>
-        <!--== Member End ==-->
-
-        <figure class="imghvr-blur text-center col-md-2 col-sm-2 col-xs-12 remove-padding">
-          <img src="assets/images/team/team-06.jpg" alt="your-image">
-          <figcaption class="white-bg">
-            <div class="center-layout">
-				  	<div class="v-align-middle">
-				  		<h4 class="mb-0 mt-10 dark-color">Donna Alvarez</h4>
-				  		<h5 class="gradient-color mt-0 mb-0">HR Manager</h5>
-              <ul class="social-default-no-border mt-20 mb-20">
-        			  <li><a href="#" class="facebook"><i class="icofont icofont-social-facebook"></i></a></li>
-        			  <li><a href="#" class="twitter"><i class="icofont icofont-social-twitter"></i></a></li>
-        			  <li><a href="#" class="behance"><i class="icofont icofont-social-behance"></i></a></li>
-        			  <li><a href="#" class="dribble"><i class="icofont icofont-social-dribble"></i></a></li>
-        		  </ul>
-				  	</div>
-				  </div>
-          </figcaption>
-        </figure>
-        <!--== Member End ==-->
-
-      </div>
-    </div>
-  </section>
-  <!--== Our Team End ==-->
-
-  <!--== Video Start ==-->
-  <section style="background-image: url(assets/images/background/pattern-bg-dark.jpg);">
-
-    <div class="container">
-    	<div class="row">
-        <div class="col-md-6 parallax-content">
-            <h3 class="white-color font-700 mt-0 xs-font-20px">We create bespoke <span class="gradient-color">a websites</span> tuned specifically to your business.</h3>
-            <h5 class="white-color mt-40 font-italic xs-font-12px xs-mt-20">" Objectively innovate empowered manufactured products whereas parallel platforms.
-Holisticly predominate extensible testing <span class="gradient-color">procedures</span> for reliable supply chains. "</h5>
-            <p class="xs-font-12px xs-mb-40 sm-mb-40">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sodales nunc nec ante dapibus, ut ultrices erat egestas. Donec facilisis eros eu leo faucibus dictum.</p>
-
-          </div>
-            <div class="col-md-6">
-            	<div class="video-box"> <img class="img-responsive border-radius-10" src="assets/images/about-video-img.jpg" alt="">
-      					<div class="video-box_overlay">
-      					  <div class="center-layout">
-      						<div class="v-align-middle"> <a class="popup-youtube" href="https://www.youtube.com/watch?v=sU3FkzUKHXU">
-      						  <div class="play-button"><i class="tr-icon ion-android-arrow-dropright"></i></div>
-      						  </a> </div>
-      					  </div>
-      					</div>
-      				 </div>
-            </div>
-        </div>
-    </div>
-  </section>
-  <!--== Video End ==-->
-
-
-
-  <!--== Pricing Table Start ==-->
-  <section style="background-image: url(assets/images/background/pattern-bg-dark.jpg);" id="pricing">
-    <div class="container">
-      <div class="row">
-        <div class="col-sm-8 section-heading">
-       		  <h5 class="default-color mt-0 text-uppercase">Always know what you will pay</h5>
-            <h2 class="mt-0 font-700 white-color">Our <span class="gradient-color">Pricing</span> Table</h2>
-        </div>
-      </div>
-
-      <div class="row mt-50">
-        <div class="col-md-4 pricing-table col-sm-4 animation-move-top">
-          <div class="pricing-box">
-            <h3 class="dark-color mb-0">Personal</h3>
-            <h4 class="grey-color">Basic and simple website.</h4>
-            <h2 class="karla-font font-60px dark-color"><sup>$</sup><span>10</span></h2>
-            <ul>
-              <li>Mobile-Optimized Website</li>
-                <li>Powerful Website Metrics</li>
-                <li>Free Custom Domain</li>
-                <li>24/7 Customer Support</li>
-                <li>Fully Integrated E-Commerce</li>
-                <li>Sell Unlimited Products &amp; Accept Donations</li>
-            </ul>
-            <div class="pricing-box-bottom"> <a class="btn btn-dark btn-lg btn-default full-width">Try it Now</a> </div>
-          </div>
-        </div>
-
-        <div class="col-md-4 pricing-table col-sm-4 animation-move-top featured">
-          <div class="pricing-box featured">
-            <div class="featured-mark">
-              Featured
-            </div>
-            <h3 class="gradient-color mb-0">Professional</h3>
-            <h4 class="grey-color">Basic and simple website.</h4>
-            <h2 class="karla-font font-60px gradient-color"><sup class="gradient-color">$</sup><span>16</span></h2>
-            <div class="pricicng-feature">
-                <ul>
-                    <li>Mobile-Optimized Website</li>
-                    <li>Powerful Website Metrics</li>
-                    <li>Free Custom Domain</li>
-                    <li>24/7 Customer Support</li>
-                    <li>Fully Integrated E-Commerce</li>
-                    <li>Sell Unlimited Products &amp; Accept Donations</li>
-              </ul>
-            </div>
-            <div class="pricing-box-bottom"> <a class="btn btn-gradient color-1 btn-lg btn-circle full-width">Try it Now</a> </div>
-          </div>
-        </div>
-
-        <div class="col-md-4 pricing-table col-sm-4 animation-move-top">
-          <div class="pricing-box">
-            <h3 class="dark-color mb-0">Ultimate</h3>
-            <h4 class="grey-color">Basic and simple website.</h4>
-            <h2 class="karla-font font-60px dark-color"><sup>$</sup><span>29</span></h2>
-            <ul>
-                    <li>Mobile-Optimized Website</li>
-                    <li>Powerful Website Metrics</li>
-                    <li>Free Custom Domain</li>
-                    <li>24/7 Customer Support</li>
-                    <li>Fully Integrated E-Commerce</li>
-                    <li>Sell Unlimited Products &amp; Accept Donations</li>
-              </ul>
-            <div class="pricing-box-bottom"> <a class="btn btn-dark btn-lg btn-circle full-width">Try it Now</a> </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  <!--== Pricing Table End ==-->
-
-  <!--== Blogs Start ==-->
-  <section class="white-bg" id="blog">
-    <div class="container">
-      <div class="row">
-        <div class="col-sm-8 section-heading">
-       		  <h5 class="default-color mt-0 text-uppercase">Daily News</h5>
-            <h2 class="mt-0 font-700">Our <span class="gradient-color">Innovative</span> Blogs</h2>
-        </div>
-      </div>
-
-      <div class="row mt-50">
-        <div class="col-md-4 col-sm-4 col-xs-12">
-          <div class="post animation-move-top">
-            <div class="post-img"> <img class="img-responsive" src="assets/images/post/post-01.jpg" alt=""/> </div>
-            <div class="post-info pt-20 pb-20">
-              <h5>January 15, 2018</h5>
-              <h3><a href="blog-grid.html">How These Different Book Covers Reflect the Design</a></h3>
-              <h6><a class="viewmore" href="#.">view more</a></h6>
-            </div>
-          </div>
-        </div>
-        <!--== Post End ==-->
-
-        <div class="col-md-4 col-sm-4 col-xs-12">
-          <div class="post animation-move-top">
-            <div class="post-img"> <img class="img-responsive" src="assets/images/post/post-02.jpg" alt=""/> </div>
-            <div class="post-info pt-20 pb-20">
-              <h5>April 19, 2014</h5>
-              <h3><a href="blog-grid.html">8 Colorful Toys Designed to Spark the Imagination</a></h3>
-              <h6><a class="viewmore" href="#.">view more</a></h6>
-            </div>
-          </div>
-        </div>
-        <!--== Post End ==-->
-
-        <div class="col-md-4 col-sm-4 col-xs-12">
-          <div class="post animation-move-top">
-            <div class="post-img"> <img class="img-responsive" src="assets/images/post/post-03.jpg" alt=""/> </div>
-            <div class="post-info pt-20 pb-20">
-              <h5>Febuary 13, 2018</h5>
-              <h3><a href="blog-grid.html">User Experience Design is one of the most rapidly developing</a></h3>
-              <h6><a class="viewmore" href="#.">view more</a></h6>
-            </div>
-          </div>
-        </div>
-        <!--== Post End ==-->
-
-      </div>
-    </div>
-  </section>
-  <!--== Blogs End ==-->
-
-  <!--== Skills Start ==-->
-  <section class="dark-night-bg">
-    <div class="container">
-    	<div class="row">
-        	<div class="col-md-6">
-       	    	<img class="img-responsive" src="assets/images/laptop.png" alt=""/>
-            </div>
-            <div class="col-md-6">
-              <div class="skillbar-wrap skillbar-style-02 xs-mt-30 sm-mt-30">
-                <div class="skillbar white-color" data-percent="98">
-                    <span class="skillbar-title">HTML5 Expertise</span>
-                    <p class="skillbar-bar"></p>
-                    <span class="skill-bar-percent"></span>
-                </div>
-                <!-- End Skill Bar -->
-
-                <div class="skillbar white-color" data-percent="66">
-                    <span class="skillbar-title">jQuery Expertise</span>
-                    <p class="skillbar-bar"></p>
-                    <span class="skill-bar-percent"></span>
-                </div>
-                <!-- End Skill Bar -->
-
-                <div class="skillbar white-color" data-percent="85">
-                    <span class="skillbar-title">WordPress Expertise</span>
-                    <p class="skillbar-bar"></p>
-                    <span class="skill-bar-percent"></span>
-                </div>
-                <!-- End Skill Bar -->
-
-                <div class="skillbar white-color" data-percent="30">
-                    <span class="skillbar-title">PHP Expertise</span>
-                    <p class="skillbar-bar"></p>
-                    <span class="skill-bar-percent"></span>
-                </div>
-                <!-- End Skill Bar -->
-
-                <div class="skillbar white-color" data-percent="99">
-                    <span class="skillbar-title">User Interface Expertise</span>
-                    <p class="skillbar-bar"></p>
-                    <span class="skill-bar-percent"></span>
-                </div>
-                <!-- End Skill Bar -->
-
+                  <div class="cbp-item branding photography col-md-6 col-sm-6 col-xs-12" style="left: 674px; top: 336px;"><div class="cbp-item-wrapper">
+                    <figure class="imghvr-fade text-center portfolio-type-2">
+                          <img src="assets/images/img/4.jpg" alt="100">
+                          <figcaption class="gradient-bg">
+                            <div class="center-layout">
+                              <div class="v-align-middle">
+                                <a class="magnific-lightbox" href="assets/images/img/4.jpg">
+                                  <i class="icofont icofont-search"></i>
+                                </a>
+                              </div>
+                          </div>
+                        </figcaption>
+                    </figure>
+                  </div></div>
+                  
+              
+  <!-------BAG------->
+                  <div class="cbp-item branding web-design col-md-3 col-sm-6 col-xs-12" style="left: 0px; top: 673px;"><div class="cbp-item-wrapper">
+                    <figure class="imghvr-fade text-center portfolio-type-2">
+                          <img src="assets/images/img/5.jpg" alt="101">
+                          <figcaption class="gradient-bg">
+                            <div class="center-layout">
+                              <div class="v-align-middle">
+                                <a class="magnific-lightbox" href="assets/images/img/5.jpg">
+                                  <i class="icofont icofont-search"></i>
+                                </a>
+                              </div>
+                          </div>
+                        </figcaption>
+                    </figure>
+                  </div></div>
+              
+                    </div></div></div>
               </div>
-            </div>
-        </div>
-    </div>
-  </section>
-  <!--== Skills End ==-->
-
-  <!--== Contact Us Start ==-->
-  <section class="grey-bg" id="contact">
-    <div class="container">
-      <div class="row">
-        <div class="col-sm-5 col-md-5 xs-mb-30">
-          <div class="info-box">
-            <h2 class="mt-0 font-700">Contact Us</h2>
-            <p>
-              We are an prefect UX UI Designing agency building Digital experiences. And We believe our businesses are built on Ideas.
-            </p>
-
-            <p class="mt-20 font-16px">Patton Street Caulfield East VIC 3145</p>
-            <p class="font-16px">Email Us: sayhi@yoursite.com</p>
-            <p class="font-16px">Call Us: +61 (03) 9414 7288</p>
-            <div class="row mt-10">
-                <div class="col-md-12 col-sm-10 col-xs-10 text-left social-icons-style-04">
-                  <ul class="md-icon modern-icons">
-                    <li><a class="facebook" href="#."><i class="icofont icofont-social-facebook"></i></a></li>
-                    <li><a class="twitter" href="#."><i class="icofont icofont-social-twitter"></i></a></li>
-                    <li><a class="behance" href="#."><i class="icofont icofont-social-behance"></i></a></li>
-                    <li><a class="linkedin" href="#."><i class="icofont icofont-social-linkedin"></i></a></li>
-                    <li><a class="youtube" href="#."><i class="icofont icofont-social-youtube"></i></a></li>
-                  </ul>
-                </div>
-            </div>
-
           </div>
-        </div>
-        <div class="col-sm-6 col-md-6 col-md-offset-1 col-sm-offset-1">
-          <form name="contact-form" id="contact-form" action="php/contact.php" method="POST" class="contact-form-style-03 pt-30">
-            <div class="messages"></div>
-            <div class="row">
-              <div class="col-md-6 col-sm-6">
-                <div class="form-group">
-                  <label class="sr-only" for="name">Your Name</label>
-                  <input type="text" name="name" class="md-input" id="name" placeholder="Your Name" required data-error="Your Name is Required">
-                  <div class="help-block with-errors"></div>
-                </div>
-              </div>
-              <div class="col-md-6 col-sm-6">
-                <div class="form-group">
-                  <label class="sr-only" for="email">Your Email</label>
-                  <input type="email" name="email" class="md-input" id="email" placeholder="Your Email" required data-error="Please Enter Valid Email">
-                  <div class="help-block with-errors"></div>
-                </div>
-              </div>
-              <div class="col-md-12 col-sm-12">
-                <div class="form-group">
-                  <label class="sr-only" for="subject">Your Subject</label>
-                  <input type="text" name="subject" class="md-input" id="subject-2" placeholder="Your Subject">
-                </div>
-              </div>
-              <div class="col-md-12 col-sm-12">
-                <div class="form-group">
-                  <label class="sr-only" for="message">Project Details</label>
-                  <textarea name="message" class="md-textarea" id="message" rows="7" placeholder="Project Details" required data-error="Please, Leave us a message"></textarea>
-                  <div class="help-block with-errors"></div>
-                </div>
-              </div>
-              <div class="col-md-12 col-sm-12">
-                <div class="text-left mt-10">
-                  <button type="submit" name="submit" class="btn btn-gradient color-1 btn-lg btn-circle remove-margin">Send Message</button>
-                </div>
-              </div>
-            </div>
-          </form>
-        </div>
       </div>
+    </section>
 
-    </div>
-  </section>
-  <!--== Contact Us End ==-->
 
-  <!--== Call to Actions Start ==-->
-  <section class="gradient-bg-6">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-8 col-md-8 col-sm-10 col-xs-12 centerize-col text-center">
-              <h5 class="font-40px font-700 white-color">Let’s talk about your next project</h5>
-              <h5 class="mb-30 font-30px white-color font-700">Marketing. Designer & Developer</h5>
-              <a class="btn btn-xl btn-light btn-circle">Join Us</a>
+    <!-- =========================== section About-->
+    <section class="section is-sm section-about section-counter ">
+        <div class="container">
+            <div class="row flex vcenter">
+                <div class="col-lg-6">
+                    <div class="section-head mb-lg-0">
+                        <h5 class="section-subtitle "> What We Do Best </h5>
+                        <h2 class="section-title ">Create Your Own Web
+                            Masterpiece</h2>
+                        <p class="section-desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit, do eius mod
+                            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad min im veniam, quis nostrud
+                            exercitati ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                        </p>
+                        <a href="#" class="btn">See our stadies</a>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <img class="about-img" src="../assets/images/bg/about.png" alt="">
+                </div>
+
+            </div>
+            <div class="row counters flex center min-20">
+                <!-- ==== item -->
+                <div class="col-lg-3 col-md-4 col-6">
+                    <div class="counter-item">
+                        <h5 class="counter-number ">+ <span class="counter">451</span>M </h5>
+                        <p class="counter-name"> Clients </p>
+                    </div>
+                </div>
+                <!-- ==== item -->
+                <div class="col-lg-3  col-md-4 col-6">
+                    <div class="counter-item">
+                        <h5 class="counter-number ">+ <span class="counter">9500</span> </h5>
+                        <p class="counter-name"> jobs </p>
+                    </div>
+                </div>
+                <!-- ==== item -->
+                <div class="col-lg-3  col-md-4 col-6">
+                    <div class="counter-item">
+                        <h5 class="counter-number "><span class="counter"> 98</span>k </h5>
+                        <p class="counter-name"> invester </p>
+                    </div>
+                </div>
+                <!-- ==== item -->
+                <div class="col-lg-3  col-md-4 col-6">
+                    <div class="counter-item">
+                        <h5 class="counter-number counter"> 945</h5>
+                        <p class="counter-name"> worker </p>
+                    </div>
+                </div>
             </div>
         </div>
-    </div>
-  </section>
-  <!--== Call to Actions End ==-->
+    </section>
+    <!-- =========================== section Works-->
+    <section class="section is-sm section-works">
+        <div class="container">
+            <div class="section-head vcenter">
+                <div>
+                    <h5 class="section-subtitle is-center"> What We Do Best </h5>
+                    <h2 class="section-title is-center">We've done a lot's<span class="text-primary">. </span></h2>
+                </div>
+            </div>
+            <div class="work-boxes work-boxes-slick">
+                <div class="">
+                    <div class="work-box">
+                        <img class="work-img" src="../assets/images/bg/work1.png" alt="">
+                        <div class="work-head">
+                            <h5 class="title"> <a href="#"> clean watcher</a> </h5>
+                            <span class="sub-title"> products </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="">
+                    <div class="work-box">
+                        <img class="work-img" src="../assets/images/bg/work2.png" alt="">
+                        <div class="work-head">
+                            <h5 class="title"> <a href="#"> clean watcher</a> </h5>
+                            <span class="sub-title"> products </span>
 
-  <!--== Footer Start ==-->
-  <footer class="footer" id="footer-fixed">
-    <div class="footer-main">
-      <div class="container">
-        <div class="row">
-          <div class="col-sm-6 col-md-3">
-            <div class="widget widget-text">
-              <h5 class="widget-title">Contact Info</h5>
-              <p>
-                Perspiciatis unde omnis iste natus sit volutat em accusantium
-              </p>
-              <div class="contact-detail">
-                  <ul>
-                    <li><i class="icofont icofont-location-pin gradient-color"></i>380 St Kilda Road, Sydeny VIC 3004, Australia</li>
-                    <li><i class="icofont icofont-ui-call gradient-color"></i> +123 (4567) 890</li>
-                    <li><i class="icofont icofont-envelope gradient-color"></i> info@agency.com</li>
-                  </ul>
-              </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="">
+                    <div class="work-box">
+                        <img class="work-img" src="../assets/images/bg/work3.png" alt="">
+                        <div class="work-head">
+                            <h5 class="title"> <a href="#"> clean watcher</a> </h5>
+                            <span class="sub-title"> products </span>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="">
+                    <div class="work-box">
+                        <img class="work-img" src="../assets/images/bg/work2.png" alt="">
+                        <div class="work-head">
+                            <h5 class="title"> <a href="#"> clean watcher</a> </h5>
+                            <span class="sub-title"> products </span>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="">
+                    <div class="work-box">
+                        <img class="work-img" src="../assets/images/bg/work3.png" alt="">
+                        <div class="work-head">
+                            <h5 class="title"> <a href="#"> clean watcher</a> </h5>
+                            <span class="sub-title"> products </span>
+
+                        </div>
+                    </div>
+                </div>
             </div>
-          </div>
-          <div class="col-sm-6 col-md-2">
-            <div class="widget widget-links">
-              <h5 class="widget-title">Useful Links</h5>
-              <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About Us</a></li>
-                <li><a href="#">Our Services</a></li>
-                <li><a href="#">Blog</a></li>
-                <li><a href="#">Portfolio</a></li>
-              </ul>
-            </div>
-          </div>
-          <div class="col-sm-6 col-md-3">
-            <div class="widget widget-links">
-              <h5 class="widget-title">Other Services</h5>
-              <ul>
-                <li><a href="#">Careers</a></li>
-                <li><a href="#">FAQs</a></li>
-                <li><a href="#">Forum</a></li>
-                <li><a href="#">Meetup</a></li>
-                <li><a href="#">Help Center</a></li>
-              </ul>
-            </div>
-          </div>
-          <div class="col-sm-6 col-md-3">
-            <div class="widget widget-text">
-              <h5 class="widget-title">Working Hours</h5>
-              <p>Our support available to help you 24 hours a day, seven days a week.</p>
-              <p><strong>Monday to Friday</strong> – <span class="gradient-color">9AM – 6PM</span></p>
-              <p><strong>Saturday to Sunday</strong> – <span class="gradient-color">9AM – 1PM</span></p>
-            </div>
-          </div>
         </div>
-      </div>
-    </div>
-    <div class="footer-copyright">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-6 col-xs-12">
-            <div class="copy-right text-left">© 2019 <span class="gradient-color">Ascot One Page.</span> All rights reserved</div>
-          </div>
-          <div class="col-md-6 col-xs-12">
-            <ul class="social-media">
-              <li><a href="#" class="icofont icofont-social-facebook"></a></li>
-      			  <li><a href="#" class="icofont icofont-social-twitter"></a></li>
-      			  <li><a href="#" class="icofont icofont-social-behance"></a></li>
-      			  <li><a href="#" class="icofont icofont-social-dribble"></a></li>
-           	  <li><a href="#" class="icofont icofont-social-linkedin"></a></li>
-            </ul>
-          </div>
+    </section>
+   
+    <!-- =========================== section Plans-->
+    <section class="section is-sm section-pricing">
+        <img class="section-particle  top-0" src="../images/others/particle.svg" alt="">
+        <div class="container">
+            <div class="section-head vcenter">
+                <div>
+                    <h5 class="section-subtitle is-center"> What We Do Best </h5>
+                    <h2 class="section-title is-center">We've done a lot's<span class="text-primary">. </span></h2>
+                </div>
+            </div>
+            <div class="row flex vcenter min-30 ">
+                <!-- ====== plan item -->
+                <div class="col-md-4 aos-init aos-animate" data-aos="fade-right" data-aos-delay="100">
+                    <div class="plan-item has-style1 in-left">
+                        <div class="plan-head">
+                            <h4 class="plan-title"> Silver </h4>
+                            <div class="flex center">
+                                <div class="plan-price">£15.99</div>
+                            </div>
+
+                        </div>
+                        <div class="plan-body">
+                            <ul class="list-items">
+                                <li class="item">
+                                    <img src="../assets/images/icons/check.svg" alt=""> Private Limited Company
+                                </li>
+                                <li class="item">
+                                    <img src="../assets/images/icons/check.svg" alt=""> Digital Company Documents
+                                </li>
+                                <li class="item">
+                                    <img src="../assets/images/icons/check.svg" alt=""> Free Domain Name
+                                </li>
+                                <li class="item ">
+                                    <img src="../assets/images/icons/check.svg" alt=""> Digital Company Registers
+                                </li>
+                                <li class="item ">
+                                    <img src="../assets/images/icons/check.svg" alt=""> Minutes of First Board Meeting
+                                </li>
+                                <li class="item">
+                                    <img src="../assets/images/icons/check.svg" alt=""> Legal Contracts & Notices Package
+                                </li>
+                                <li class="item is-none">
+                                    <img src="../assets/images/icons/check.svg" alt=""> Printed Company Documents
+                                </li>
+                                <li class="item is-none">
+                                    <img src="../assets/images/icons/check.svg" alt=""> VAT Registration
+                                </li>
+                                <li class="item is-none">
+                                     <img src="../assets/images/icons/check.svg" alt=""> PAYE Registration
+                                </li>
+                                <li class="item is-none">
+                                     <img src="../assets/images/icons/check.svg" alt=""> Confirmation Statement
+                                </li>
+
+
+                            </ul>
+                            <div class="flex center mt-1">
+                                <a href="" class="btn btn-dark"> Get Started </a>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <!-- ====== plan item -->
+                <div class="col-md-4 aos-init aos-animate" data-aos="fade-right" data-aos-delay="100">
+                    <div class="plan-item has-style1 in-left gold-plan ">
+                        <div class="best-choose">
+                            Best Choose
+                        </div>
+                        <div class="plan-head">
+                            <h4 class="plan-title"> Gold </h4>
+                            <div class="flex center">
+                                <div class="plan-price is-primary">£19.99</div>
+                            </div>
+
+                        </div>
+                        <div class="plan-body">
+                            <ul class="list-items">
+                                <li class="item">
+                                     <img src="../assets/images/icons/check.svg" alt="">  Private Limited Company
+                                </li>
+                                <li class="item">
+                                     <img src="../assets/images/icons/check.svg" alt="">  Digital Company Documents
+                                </li>
+                                <li class="item">
+                                     <img src="../assets/images/icons/check.svg" alt="">  Free Domain Name
+                                </li>
+                                <li class="item ">
+                                     <img src="../assets/images/icons/check.svg" alt=""> Digital Company Registers
+                                </li>
+                                <li class="item ">
+                                     <img src="../assets/images/icons/check.svg" alt=""> Minutes of First Board Meeting
+                                </li>
+                                <li class="item">
+                                     <img src="../assets/images/icons/check.svg" alt=""> Legal Contracts & Notices Package
+                                </li>
+                                <li class="item ">
+                                     <img src="../assets/images/icons/check.svg" alt=""> Printed Company Documents
+                                </li>
+                                <li class="item is-none">
+                                     <img src="../assets/images/icons/check.svg" alt=""> VAT Registration
+                                </li>
+                                <li class="item is-none">
+                                     <img src="../assets/images/icons/check.svg" alt=""> PAYE Registration
+                                </li>
+                                <li class="item is-none">
+                                     <img src="../assets/images/icons/check.svg" alt=""> Confirmation Statement
+                                </li>
+
+
+                            </ul>
+                            <div class="flex center mt-1">
+                                <a href="" class="btn btn-primary"> Get Started </a>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <!-- ====== plan item -->
+                <div class="col-md-4 aos-init aos-animate" data-aos="fade-right" data-aos-delay="100">
+                    <div class="plan-item has-style1 in-left">
+
+                        <div class="plan-head">
+                            <h4 class="plan-title"> Platinum </h4>
+                            <div class="flex center">
+                                <div class="plan-price">£49.99</div>
+                            </div>
+
+                        </div>
+                        <div class="plan-body">
+                            <ul class="list-items">
+                                <li class="item">
+                                     <img src="../assets/images/icons/check.svg" alt="">  Private Limited Company
+                                </li>
+                                <li class="item">
+                                     <img src="../assets/images/icons/check.svg" alt="">  Digital Company Documents
+                                </li>
+                                <li class="item">
+                                     <img src="../assets/images/icons/check.svg" alt="">  Free Domain Name
+                                </li>
+                                <li class="item ">
+                                     <img src="../assets/images/icons/check.svg" alt=""> Digital Company Registers
+                                </li>
+                                <li class="item ">
+                                     <img src="../assets/images/icons/check.svg" alt=""> Minutes of First Board Meeting
+                                </li>
+                                <li class="item">
+                                     <img src="../assets/images/icons/check.svg" alt=""> Legal Contracts & Notices Package
+                                </li>
+                                <li class="item ">
+                                     <img src="../assets/images/icons/check.svg" alt=""> Printed Company Documents
+                                </li>
+                                <li class="item ">
+                                     <img src="../assets/images/icons/check.svg" alt=""> VAT Registration
+                                </li>
+                                <li class="item ">
+                                     <img src="../assets/images/icons/check.svg" alt=""> PAYE Registration
+                                </li>
+                                <li class="item ">
+                                     <img src="../assets/images/icons/check.svg" alt=""> Confirmation Statement
+                                </li>
+
+
+                            </ul>
+                            <div class="flex center mt-1">
+                                <a href="" class="btn btn-dark"> Get Started </a>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+
+
+            </div>
         </div>
-      </div>
-    </div>
-  </footer>
-  <!--== Footer End ==-->
-
-  <!--== Go to Top  ==-->
-  <a href="javascript:" id="return-to-top"><i class="icofont icofont-arrow-up"></i></a>
-  <!--== Go to Top End ==-->
-
-</div>
-<!--== Wrapper End ==-->
-
-<!--== Javascript Plugins ==-->
-<script type="text/javascript">
-      var revapi263,
-      tpj;
-      (function() {
-      if (!/loaded|interactive|complete/.test(document.readyState)) document.addEventListener("DOMContentLoaded",onLoad); else onLoad();
-      function onLoad() {
-      if (tpj===undefined) { tpj = jQuery; if("off" == "on") tpj.noConflict();}
-      if(tpj("#rev_slider_263_1").revolution == undefined){
-      revslider_showDoubleJqueryError("#rev_slider_263_1");
-      }else{
-      revapi263 = tpj("#rev_slider_263_1").show().revolution({
-        sliderType:"standard",
-        jsFileLocation:"revolution/js/",
-        sliderLayout:"fullscreen",
-        dottedOverlay:"none",
-        delay:9000,
-        navigation: {
-          keyboardNavigation:"on",
-          keyboard_direction: "horizontal",
-          mouseScrollNavigation:"off",
-                mouseScrollReverse:"default",
-          onHoverStop:"off",
-          touch:{
-            touchenabled:"on",
-            touchOnDesktop:"off",
-            swipe_threshold: 75,
-            swipe_min_touches: 1,
-            swipe_direction: "horizontal",
-            drag_block_vertical: false
-          }
-          ,
-          bullets: {
-            enable:true,
-            hide_onmobile:false,
-            style:"hermes",
-            hide_onleave:false,
-            direction:"horizontal",
-            h_align:"center",
-            v_align:"bottom",
-            h_offset:0,
-            v_offset:20,
-            space:5,
-            tmp:''
-          }
-        },
-        responsiveLevels:[1240,1024,778,480],
-        visibilityLevels:[1240,1024,778,480],
-        gridwidth:[1240,1024,778,480],
-        gridheight:[868,768,960,720],
-        lazyType:"none",
-        shadow:0,
-        spinner:"off",
-        stopLoop:"on",
-        stopAfterLoops:0,
-        stopAtSlide:1,
-        shuffle:"off",
-        autoHeight:"off",
-        fullScreenAutoWidth:"off",
-        fullScreenAlignForce:"off",
-        fullScreenOffsetContainer: "",
-        fullScreenOffset: "",
-        disableProgressBar:"on",
-        hideThumbsOnMobile:"off",
-        hideSliderAtLimit:0,
-        hideCaptionAtLimit:0,
-        hideAllCaptionAtLilmit:0,
-        debugMode:false,
-        fallbacks: {
-          simplifyAll:"off",
-          nextSlideOnWindowFocus:"off",
-          disableFocusListener:false,
-        }
-      });
-      }; /* END OF revapi call */
-
-      BubbleMorphAddOn(jQuery, revapi263, false)
-
-      }; /* END OF ON LOAD FUNCTION */
-      }()); /* END OF WRAPPING FUNCTION */
-</script>
-
-<script src="assets/js/jquery.min.js"></script>
-<!--<script src="assets/js/smoothscroll.js"></script>-->
-<script src="assets/js/plugins.js"></script>
-<script src="assets/js/master.js"></script>
-
-<!-- Revolution js Files -->
-<script type="text/javascript" src="revolution/js/jquery.themepunch.tools.min.js"></script>
-<script type="text/javascript" src="revolution/js/jquery.themepunch.revolution.min.js"></script>
-<script type="text/javascript" src="revolution/js/revolution.extension.actions.min.js"></script>
-<script type="text/javascript" src="revolution/js/revolution.extension.carousel.min.js"></script>
-<script type="text/javascript" src="revolution/js/revolution.extension.kenburn.min.js"></script>
-<script type="text/javascript" src="revolution/js/revolution.extension.layeranimation.min.js"></script>
-<script type="text/javascript" src="revolution/js/revolution.extension.migration.min.js"></script>
-<script type="text/javascript" src="revolution/js/revolution.extension.navigation.min.js"></script>
-<script type="text/javascript" src="revolution/js/revolution.extension.parallax.min.js"></script>
-<script type="text/javascript" src="revolution/js/revolution.extension.slideanims.min.js"></script>
-<script type="text/javascript" src="revolution/js/revolution.extension.video.min.js"></script>
-<script type='text/javascript' src='revolution/js/revolution.addon.bubblemorph.min.js'></script>
-<!--== Javascript Plugins End ==-->
+    </section>
+    <!-- =========================== section Blog-->
+    <section class="section is-sm section-blog">
+        <div class="container">
+            <div class="section-head vcenter">
+                <div>
+                    <h5 class="section-subtitle is-center"> What We Do Best </h5>
+                    <h2 class="section-title is-center">We've done a lot's<span class="text-primary">. </span></h2>
+                </div>
+            </div>
+            <div class="work-boxes blog-boxes-slick">
+                <div class="">
+                    <div class="post-wrap mt-0">
+                        <a href="#">
+                            <div class="post-img">
+                                <img src="../assets/images/bg/post1.jpg" alt="">
+                            </div>
+                        </a>
+                        <div class="post-content mb-0">
+                            <div class="post-meta">
+                            </div>
+                            <h3 class="post-title"><a href="#">We are developing innovative software solutions </a>
+                            </h3>
+                            <p class="post-description">
+                                Im not sure, try something else i know you've made thirty iterations but can
+                                we go back to the first one that was the best version.
+                            </p>
+                            <span class="post-author">By <a href="#" rel="author">Albert Kerri</a></span>
+                            <span class="post-date"> 02 september 2019 </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="">
+                    <div class="post-wrap mt-0">
+                        <a href="#">
+                            <div class="post-img">
+                                <img src="../assets/images/bg/post3.jpg" alt="">
+                            </div>
+                        </a>
+                        <div class="post-content mb-0">
+                            <div class="post-meta">
+                            </div>
+                            <h3 class="post-title"><a href="#">A cool mobile app with direct access to dining </a>
+                            </h3>
+                            <p class="post-description">
+                                Im not sure, try something else i know you've made thirty iterations but can
+                                we go back to the first one that was the best version.
+                            </p>
+                            <span class="post-author">By <a href="#" rel="author">Albert Kerri</a></span>
+                            <span class="post-date"> 02 september 2019 </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="">
+                    <div class="post-wrap mt-0">
+                        <a href="#">
+                            <div class="post-img">
+                                <img src="../assets/images/bg/post1.jpg" alt="">
+                            </div>
+                        </a>
+                        <div class="post-content mb-0">
+                            <div class="post-meta">
+                            </div>
+                            <h3 class="post-title"><a href="#">Winning tactics for a new digital agency</a>
+                            </h3>
+                            <p class="post-description">
+                                Im not sure, try something else i know you've made thirty iterations but can
+                                we go back to the first one that was the best version.
+                            </p>
+                            <span class="post-author">By <a href="#" rel="author">Albert Kerri</a></span>
+                            <span class="post-date"> 02 september 2019 </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="">
+                    <div class="post-wrap mt-0">
+                        <a href="#">
+                            <div class="post-img">
+                                <img src="../assets/images/bg/post1.jpg" alt="">
+                            </div>
+                        </a>
+                        <div class="post-content mb-0">
+                            <div class="post-meta">
+                            </div>
+                            <h3 class="post-title"><a href="#">Winning tactics for a new digital agency</a>
+                            </h3>
+                            <p class="post-description">
+                                Im not sure, try something else i know you've made thirty iterations but can
+                                we go back to the first one that was the best version.
+                            </p>
+                            <span class="post-author">By <a href="#" rel="author">Albert Kerri</a></span>
+                            <span class="post-date"> 02 september 2019 </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- =========================== Footer-->
+    <footer class="footer has-style1">
+        <div class="footer-body">
+            <div class="container">
+                <div class="row ">
+                    <div class="col-lg-6">
+                        <div class="footer-desc">
+                            <div class="logo">
+                                <h1 class="text-white">olikit</h1>
+                            </div>
+                            <p>Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing
+                                .</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-6">
+                        <h6 class="list-title">Company</h6>
+                        <ul class="list-items">
+                            <li> <a href="#">About</a> </li>
+                            <li> <a href="#">Our customers</a> </li>
+                            <li> <a href="#">Contact us</a> </li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-2 col-6">
+                        <h6 class="list-title">Useful links</h6>
+                        <ul class="list-items">
+                            <li> <a href="#">Media kit</a> </li>
+                            <li> <a href="#">Affiliate program</a> </li>
+                            <li> <a href="#">Contact us</a> </li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-2">
+                        <h6 class="list-title">Legal</h6>
+                        <ul class="list-items">
+                            <li> <a href="#">Terms</a> </li>
+                            <li> <a href="#">Privacy </a> </li>
+                            <li> <a href="#">Cookies</a> </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <p class="copyright text-center text-copyright"> All rights reserved 2019</p>
+        </div>
+    </footer>
+    <!-- ====================================== js files  -->
+    <script src="../assets/js/plugins/jQuery.min.js"></script>
+    <script src="../assets/js/plugins/modernizr.min.js"></script>
+    <script src="../assets/js/plugins/bootstrap.min.js"></script>
+    <script src="../assets/js/plugins/feather-icons.js"></script>
+    <script src="../assets/js/plugins/slick.min.js"></script>
+    <script src="../assets/js/plugins/owl.carousel.min.js"></script>
+    <script src="../assets/js/plugins/aos.js"></script>
+    <script src="../assets/js/plugins/typed.js"></script>
+    <script src="../assets/js/plugins/all.min.js"></script>
+    <script src="../assets/js/plugins/jquery.waypoints.min.js"></script>
+    <script src="../assets/js/plugins/jquery.counterup.min.js"></script>
+    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+    <script src="../assets/js/main.js"></script>
 
 </body>
+
 </html>
